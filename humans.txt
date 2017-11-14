@@ -1,0 +1,14 @@
+/* TEAM */                   
+
+	Developer: Martin Lindahl.
+	Mail: martin_lindahl9@hotmail.com   
+	Github:	marrieto.github.com                        
+	Location: Kalmar, Sweden.				
+
+/* SITE */                           
+	Last update: 2017/11/10     
+	Standards: HTML5, SASS      
+	Components: Jekyll, Ruby, Github, Github-pages
+	Software: Mozilla Firefox, Visual Studio Code, Git
+   
+                        

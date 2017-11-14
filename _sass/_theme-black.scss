@@ -1,0 +1,39 @@
+// Default black theme
+
+// Color variables
+$gray: #7e7e7e;
+$dark-gray: #494949;
+$red: #E74727;
+$red-small: #DC3918;
+$white: #fff;
+
+/*
+$black: #181818;
+$red: #E74727;
+$red-small: #DC3918;
+$white: #fff;
+*/
+
+// Config
+$color-background: $gray !default;
+$color-dot-accent: $red !default;
+$color-foreground: $white !default;
+$color-title: $dark-gray !default;
+$color-body-text: $gray !default;
+$color-text-accent: $red !default;
+$color-code: $red-small !default;
+$color-nav-link: $red !default;
+$color-primary-link: $red !default;
+
+.font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Import sass partials (used in all themes)
+@import
+        "variables",
+        "base",
+        "components",
+        "utilities"
+;

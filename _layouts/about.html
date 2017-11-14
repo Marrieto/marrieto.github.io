@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    
+        <div>
+                
+                      <header class="header-background">
+                
+                        <div class="clearfix border-bottom-thick header-border">
+                            <div class="clearfix border-bottom-thick left sm-width-full py-1 mt-1 mt-lg-0 ml-1">
+                                <a class="link-primary header-text" href="{{ site.baseurl }}/">
+                                        Home
+                                </a>
+                        </div>
+
+
+                          <ul class="list-reset right py-1 header-text font-smoothing">
+                            {% for my_page in site.pages %}
+                              {% if my_page.title %}
+                              <li class="inline-block">
+                                <a class="link-primary header-link mr-2" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                              </li>
+                              {% endif %}
+                            {% endfor %}
+                          </ul>
+                        </div>
+                
+                        <div class="container mx-auto px-2 mb-2 clearfix header-text">
+                          <h1 class="h0 inline-block col-12 sm-width-full py-4 mt-3 header-title text-center"> About </h1>
+                
+                          <div class="clearfix mb-0 py-1">
+
+                            </div>
+                          </div>               
+                        </div>
+                      </header>
+
+                      <div class="container mx-auto">
+                        <div class="clearfix center">
+                            <img src="../assets/martin.png" alt="An avatar that resembles Martin Lindahl">
+                        </div>
+                        <div class ="h3 1h-condensed font-smoothing container mx-auto clearfix mt-2 py-2 col-12 sm-width-full border-top-thin">
+                            {{ content }}
+                        </div>
+                      </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
+
+<!--
+
+    <header class="px-2 clearfix header-background">
+
+                <div class="clearfix border-bottom-thick left sm-width-full py-1 mt-1 mt-lg-0">
+                  <a class="align-middle link-primary header-text" href="{{ site.baseurl }}/">
+                    Home
+                </a>
+                </div>
+                <div class="right sm-width-full">
+                  <ul class="list-reset mt-lg-1 mb-2 mb-lg-1">
+                    {% for my_page in site.pages %}
+                      {% if my_page.title %}
+                      <li class="inline-block">
+                        <a class="align-middle link-primary header-text mr-2 mr-lg-0 ml-lg-2" href="{{ my_page.url | prepend: site.baseurl }}">
+                          {{ my_page.title }}
+                        </a>
+                      </li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+            
+
+
+                <div class="container mx-auto px-2 mb-2 clearfix header-text">
+                        <h1 class="h0 inline-block col-12 sm-width-full py-4 mt-3 header-title text-center">{{ site.title }}</h1>
+              
+                        <div class="clearfix mb-4 py-1">
+                          <div class="col-12 sm-width-full left border-top-thin">
+              
+
+                        </div>
+              
+                      </div>
+
+    </header>
+
+-->
